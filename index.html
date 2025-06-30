@@ -90,6 +90,13 @@ header {
   margin-bottom: 30px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .hero-buttons .btn {
   text-decoration: none;
   background-color: #e63946;
@@ -99,8 +106,11 @@ header {
   border-radius: 5px;
   transition: background 0.3s;
   font-weight: bold;
+  flex: 1 1 180px; /* makes the buttons wrap better on small screens */
+  max-width: 250px;
 }
-.hero:hover{
+
+.hero:hover {
   box-shadow: 2px 2px 2px red;
 }
 
@@ -125,6 +135,28 @@ header {
   background-color: white;
   color: #1d3557;
 }
+
+/* 🔽 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 80%;
+    margin: 8px 0;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -262,7 +294,7 @@ footer {
   <section class="hero">
     <div class="hero-text">
       <h2>Empowering the Future with Digital Skills & Smart Technology</h2>
-      <p style="font-size: 1.5rem; font-style: italic;">Welcome to TechLift Solutions — your trusted center for tech training, computer sales, and digital growth.</p>
+      <p style="font-size: 1.5rem; font-style: italic;color: chartreuse;">Welcome to TechLift Solutions — your trusted center for tech training, computer sales, and digital growth.</p>
       <div class="hero-buttons">
         <a href="services.html" class="btn">🎓 Enroll Now</a>
         <a href="product.html" class="btn btn-secondary">🖥️ Shop Computers</a>
@@ -282,7 +314,7 @@ footer {
         <li><a href="about.html">About us</a></li>
         <li><a href="product.html">Products</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
