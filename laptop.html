@@ -134,26 +134,23 @@
       background-color: #d62828;
     }
 
-    footer {
-      background-color: #405b81;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-    .containers{
-  display: flex;
-  margin-left: 450px;
-  
-  
+    /* Footer */
+footer {
+  background-color: #405b81;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -163,11 +160,10 @@
 
 .footer-col1 {
   padding-right: 60px;
-  
 }
+
 .footer-col {
-  padding-left: 80px;
-  
+  padding-left: 10px;
 }
 
 .footer-col h2, .footer-col h3 {
@@ -194,9 +190,6 @@
   color: #ffcc00;
 }
 
-.footer-col1 p {
-  margin: 5px 0;
-}
 .footer-col1 h2, .footer-col1 h3 {
   margin-bottom: 10px;
   color: #ffcc00;
@@ -225,6 +218,28 @@
   margin: 5px 0;
 }
 
+
+@media (max-width: 768px) {
+  .containers,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .footer-col,
+  .footer-col1 {
+    padding: 10px 0;
+  }
+
+  .footer-col ul,
+  .footer-col1 ul {
+    padding-left: 0;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -236,7 +251,7 @@
       <h1>TechLift Solutions</h1>
     </div>
     <nav class="navbar">
-      <a href="indexh.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="product.html">Products</a>
       <a href="services.html">Services</a>
