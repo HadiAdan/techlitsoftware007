@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computers – TechLift Solutions</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #405b81;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+
+    .navbar {
+      background-color: #457b9d;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+      text-decoration: underline;
+      color: #ffdd57;
+    }
+
+    .section-hero {
+      background-color: #f4f4f4;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #1d3557;
+      margin-bottom: 15px;
+    }
+
+    .products-section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #f9f9f9;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      color: #1d3557;
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      min-height: 40px;
+    }
+
+    .product-card .price {
+      font-weight: bold;
+      color: #e63946;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #e63946;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #d62828;
+    }
+
+    footer {
+      background-color: #405b81;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .containers{
+  display: flex;
+  margin-left: 450px;
+  
+  
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-col1 {
+  padding-right: 60px;
+  
+}
+.footer-col {
+  padding-left: 80px;
+  
+}
+
+.footer-col h2, .footer-col h3 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.footer-col1 p {
+  margin: 5px 0;
+}
+.footer-col1 h2, .footer-col1 h3 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-col1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col1 ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col1 ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col1 ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.footer-col1 p {
+  margin: 5px 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <img src="logo.jpg" alt="Company Logo" class="logo" />
+      <h1>TechLift Solutions</h1>
+    </div>
+    <nav class="navbar">
+      <a href="indexh.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section-hero">
+    <div class="container text-center">
+      <h2 class="section-title">Available Computers</h2>
+      <p style="font-size: large;">Explore our selection of laptops and desktops - best prices guaranteed.</p>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products-section">
+    <div class="container products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=60" alt="Laptop">
+        <h3>HP ProBook 450 G5</h3>
+        <p>Core i5, 8GB RAM, 256GB SSD, Windows 10 Pro</p>
+        <div class="price">KES 42,000</div>
+        <a href="https://wa.me/254727720723" class="btn">Order Now</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="images.jpeg" alt="Dell Desktop">
+        <h3>Dell Desktop</h3>
+        <p>Core i5, 16GB RAM, 500GB HDD + 256GB SSD, Monitor</p>
+        <div class="price">KES 38,000</div>
+        <a href="https://wa.me/254727720723" class="btn">Order Now</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=60" alt="Lenovo ThinkPad">
+        <h3>Lenovo ThinkPad X270</h3>
+        <p>Core i5 6th Gen, 8GB RAM, 256GB SSD, 12.5" HD</p>
+        <div class="price">KES 36,500</div>
+        <a href="https://wa.me/254727720723" class="btn">Order Now</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="shopping.webp" alt="HP Desktop">
+        <h3>HP EliteDesk 800</h3>
+        <p>Core i7, 8GB RAM, 1TB HDD, 21.5" Monitor + Keyboard</p>
+        <div class="price">KES 45,000</div>
+        <a href="https://wa.me/254727720723" class="btn">Order Now</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="containers">
+      <!-- Column 2: Quick Links -->
+    <div class="footer-col1">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="indexh.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>P.O. Box 123, Garissa, Kenya</p>
+      <p>Email: techlift2021@gmail.com</p>
+      <p>Phone: +254 727720723</p>
+    </div>
+    
+    </div>
+    <hr><br>
+      <p>&copy; 2025 TechLift Solutions | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
